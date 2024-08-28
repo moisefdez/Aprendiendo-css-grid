@@ -3,6 +3,83 @@ body{
     text-align: center;
 }
 
+
+/* GRID TEMPLATE AREA */
+#wedsite1 *{
+    margin: 0;
+    padding: 0;
+}
+
+
+#wedsite1{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+    grid-template-areas:
+    "cabecera cabecera cabecera cabecera cabecera"
+    "lateral pie pie pie pie"
+    "lateral contenido contenido contenido contenido"
+    "menu menu menu menu menu";
+    width: 75%;
+    height: 100vh;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+#cabecera1{
+    grid-area: cabecera;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+}
+
+#menu1{
+    grid-area: menu;
+    background-color: lightblue;
+    color: black;
+}
+
+#menu1 ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    list-style: none;
+}
+
+#contenido1{
+    grid-area: contenido;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:10px;
+    padding: 20px;
+    
+
+    background-color: #ccc;
+}
+
+#contenido1 article{
+     
+    border: 1px solid black;
+}
+
+#lateral1{
+    grid-area: lateral;
+    background-color: orange;
+    color: white;
+}
+
+#pie-pagina1{
+    grid-area: pie;
+    background-color: black;
+    color: white;
+}
+
+
+
 /* EJERCCIO COMPLETO */
 
 #wedsite *{
