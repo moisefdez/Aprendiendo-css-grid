@@ -3,6 +3,77 @@ body{
     text-align: center;
 }
 
+/* EJERCCIO COMPLETO */
+
+#wedsite *{
+    margin: 0;
+    padding: 0;
+}
+
+
+#wedsite{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+
+    width: 75%;
+    height: 100vh;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+#cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/6;
+
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+}
+
+#menu{
+    grid-column: 1/6;
+    background-color: lightblue;
+    color: black;
+}
+
+#menu ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    list-style: none;
+}
+
+#contenido{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:10px;
+    padding: 20px;
+    
+    grid-column: 1/5;
+    background-color: #ccc;
+}
+
+#contenido article{
+     
+    border: 1px solid black;
+}
+
+#lateral{
+    grid-column: 5/6;
+    background-color: orange;
+    color: white;
+}
+
+#pie-pagina{
+    grid-column: 1/6;
+    background-color: black;
+    color: white;
+}
+
+/* EJEMPLO */
+
 .layout{
     width: 80%;
     height: 100vh;
